@@ -6,10 +6,18 @@ var playerMoney = 10;
 // You can also log multiple values at once like this
 console.log(playerName, playerAttack, playerHealth, playerMoney);
 
-var enemyName = "Roborto";
+var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
+console.log(enemyNames);
+console.log(enemyNames.length);
 var enemyHealth = 50;
 var enemyAttack = 12;
 
+
+// Game States
+// "WIN" - Player robot has defeated all enemy-robots
+//    * Fight all enemy-robots
+//    * Defeat each enemy-robot
+// "LOSE" - Player robot's health is zero or less
 var fight = function() {
  // Alert players that they are starting the round
   window.alert("Welcome to Robot Gladiators!");
@@ -56,7 +64,6 @@ if (promptFight === "fight" || promptFight === "FIGHT") {
     window.alert(playerName + " has decided to skip this fight. Goodbye!");
     // subtract money from playerMoney for skipping
     playerMoney = playerMoney - 2;
-    console.log
   }
   // if no (false), ask question again by running fight() again
   else {
@@ -65,4 +72,4 @@ if (promptFight === "fight" || promptFight === "FIGHT") {
 }
  };
 
-fight();
+// fight();
